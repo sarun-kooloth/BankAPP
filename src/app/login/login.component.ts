@@ -35,12 +35,39 @@ export class LoginComponent implements OnInit {
 
   //user defined functions
 
+  // //login
+  // login()
+  // {
+    
+  //   var acno = this.acno
+  //   var pswd = this.pswd
+
+  //   let userDetails = this.userDetails
+    
+  //   if(acno in userDetails)
+  //   {
+  //     if(pswd == userDetails[acno]['password'])
+  //     {
+  //       alert("login success")
+  //     }
+  //     else
+  //     {
+  //       alert("incorrect password")
+  //     }
+  //   }
+  //   else
+  //   {
+  //     alert("user does not exist")
+  //   }
+  // }
+
+  //login with 2 argument
   //login
-  login()
+  login(a:any,p:any)
   {
     
-    var acno = this.acno
-    var pswd = this.pswd
+    var acno = a.value
+    var pswd = p.value
 
     let userDetails = this.userDetails
     
@@ -60,7 +87,6 @@ export class LoginComponent implements OnInit {
       alert("user does not exist")
     }
   }
-
 
   //acnoChange()
   acnoChange(event:any)
