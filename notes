@@ -1,0 +1,29 @@
+        basic commands
+   ----------------------
+1 to create a project :  ng new project-name / ng new project-name --routing
+2 to run an angular project: ng serve /ng serve --open
+3 to generate component : ng g c component -name
+
+    BASIC BUILDING BLOCKS OF ANGULAR
+-----------------------------------------
+1 Module:- to import 3rd party -(root module - AppModule)
+
+2 component:- to create html,css,ts files. (root component - AppComponent)
+
+3 Data binding - share data inside component
+    
+    3.1 ONE WAY BINDING - data sharing only one direction
+        
+        3.1.1 component (ts) to view (html)
+            
+            3.1.1.1 String interpolation - {{expression}}
+            3.1.1.2 Property Binding - [attribute name]="property name"
+
+        3.1.2 view (html) to component (ts)    
+            
+            3.1.2.1 Event Binding-  (event name)="function-name()"
+
+            3.1.2.2 Event Binding using $event-  (event name)="function-name($event)"
+
+            3.1.2.3 Event Binding using template referencing variable  -  #variable-name
+
